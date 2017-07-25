@@ -1,0 +1,3 @@
+seq="ATGAAATGA"
+print seq
+
