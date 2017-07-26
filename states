@@ -1,0 +1,4 @@
+states= {"Washington": "WA", "Oregon": "OR", "California": "CA", "Idaho": "ID"}
+
+input = "Washington"
+print states[input]

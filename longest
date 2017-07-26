@@ -1,0 +1,7 @@
+L=["ATGGG", "ATGC", "A", "CATGATTTT"]
+
+longest=L[0]
+for i in L:
+       if i > longest:
+          longest=i
+print longest

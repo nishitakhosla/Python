@@ -1,0 +1,7 @@
+L=[2,7,333,-1,50]
+
+smallest=L[0]
+for i in L:
+       if i < smallest:
+          smallest=i
+print smallest
