@@ -1,0 +1,57 @@
+import random
+
+genome=""
+
+for i in range(5001):
+     x= random.uniform(0,1)
+
+
+
+
+     if x>=0 and x<0.26:
+          genome= genome + "G"
+
+     if x>=0.76 and x<1:
+          genome= genome + "T"
+
+     if x>=0.52 and x<0.76:
+          genome= genome + "A"
+
+     if x>=0.26 and x<=0.52:
+           genome= genome + "C"
+
+print genome
+
+D = {"TTT":"F", "TTC":"F", "TTA":"L", "TTG":"L", "TCT":"S", "TCC":"S","TCA":"S", "TCG":"S", "TAT":"Y", "TAC":"Y", "TGT":"C", "TGC":"C", "TGG":"W", "CTT":"L","CTC":"L", "CTA":"L", "CTG":"L", "CCT":"P", "CCC":"P", "CCA":"P","CCG":"P","CAU":"H", "CAC":"H", "CAA":"Q","CAG":"Q", "CGT":"R", "CGC":"R", "CGA":"R","CGG":"R", "ATT":"I","ATC":"I","ATA":"I", "ATG":"M", "ACT":"T", "ACC":"T", "ACA":"T", "ACG":"T", "AAT":"N", "AAC":"N", "AAA":"K", "AAG":"K", "AGT":"S", "AGC":"S", "AGA":"R", "AGG":"R", "GTT":"V", "GTC":"V", "GTA":"V", "GTG":"V", "GCT":"A", "GCC":"A", "GCA":"A", "GCG":"A", "GAT":"D", "GAC":"D","GAA":"E", "GAG":"E", "GGT":"G", "GGC":"G", "GGA":"G", "GGG":"G"}
+
+
+count= ""
+for i in range (0,len(genome),3):
+     new = D[genome[i:i+3]]  
+     count= count +new    
+print count 
+
+#if (i+3=="TGA"):
+  #   print "   "
+
+
+#elif (i+3=="CAT"):
+ #    print "   "
+
+
+#elif (i+3=="CAA"):
+#     print "   "
+
+
+
+#elif (i+3=="TAG"):
+   #  print "   "
+
+
+
+#elif (i+3=="CAT"):
+    # print "   "
+
+
+if (i+3 != D):
+     print ("   ")

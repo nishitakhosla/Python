@@ -1,0 +1,27 @@
+seq="AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC"
+
+c=0
+for i in range( len(seq) ):
+     if seq[i]=="A":
+          c=c+1
+print "A..", c
+c=0
+for i in range( len(seq) ):
+     if seq[i]=="G":
+          c=c+1
+print "G..", c
+c=0
+for i in range( len(seq) ):
+     if seq[i]=="C":
+          c=c+1
+print "C..", c
+c=0
+for i in range( len(seq) ):
+     if seq[i]=="T":
+          c=c+1
+print "T..", c
+
+
+
+
+

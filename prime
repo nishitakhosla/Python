@@ -1,0 +1,14 @@
+N=771
+
+answer= True
+
+for i in range(2,771):
+      rem=N%i
+      if rem ==0:
+          answer=False
+
+if answer ==True:
+      print "it is a prime"
+else:
+       print "it is not a prime"
+

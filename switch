@@ -1,0 +1,25 @@
+T="GAATTC"
+S=T
+S=S.replace("A","X")
+
+
+S=S.replace("T","A")
+
+
+S=S.replace("X","T")
+
+
+S=S.replace("G","X")
+
+
+S=S.replace("C","G")
+
+
+S=S.replace("X","C")   
+print S[::-1]
+
+if S[::-1] == T:
+     print "true"
+
+else:
+     print "false"
